@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- mystyle css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.scss">
@@ -75,11 +77,11 @@
                 </div>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque dolores ipsam aut?
                         Impedit neque molestiae quibusdam distinctio earum eius.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ut aut corporis reiciendis at
                         numquam quasi delectus quos, a odit repellat, provident assumenda porro temporibus.</p>
                 </div>
@@ -104,7 +106,8 @@
             <div class="row">
                 <div class="timeline-centered">
 
-                    <article class="timeline-entry">
+                    <article class="timeline-entry" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-offset="200">
 
                         <div class="timeline-entry-inner">
                             <time class="timeline-time" datetime="2014-01-10T03:45"><span>2018 - Present</span>
@@ -123,7 +126,8 @@
                         </div>
                     </article>
 
-                    <article class="timeline-entry left-aligned">
+                    <article class="timeline-entry left-aligned" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-delay="200">
 
                         <div class="timeline-entry-inner">
                             <time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span>
@@ -163,7 +167,8 @@
 
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                        data-aos-offset="500">
                         <img src="img/project/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -173,7 +178,8 @@
                 </div>
 
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                        data-aos-offset="500" data-aos-delay="200">
                         <img src="img/project/2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -183,7 +189,8 @@
                 </div>
 
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                        data-aos-offset="500" data-aos-delay="300">
                         <img src="img/project/3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -257,6 +264,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxQCOe8xpEAjIPrVe23fCzAC5CNAZXFMPLxkM9U7gFkL80x3817NbazV8G8tmphckHJcQ/exec'
         const form = document.forms['mip-cp']
